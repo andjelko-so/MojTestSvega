@@ -17,12 +17,14 @@ public class NavigationBean implements Serializable {
 	private String pageHeight;
 
 	public String getPageHeight() {
+		
 		FacesContext context = FacesContext.getCurrentInstance();
 		HttpServletRequest myRequest = (HttpServletRequest)context.getExternalContext().getRequest();
 		HttpSession mySession = myRequest.getSession();
 		myRequest.getParameter("webParagrafPaneldividerHeight");
 		pageHeight = new String("webParagrafPaneldividerHeight");
 		return pageHeight;
+		
 	}
 
 	public void setPageHeight(String pageHeight) {
