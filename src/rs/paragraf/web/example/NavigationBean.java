@@ -28,6 +28,7 @@ public class NavigationBean implements Serializable {
 	}
 
 	public void setPageHeight(String pageHeight) {
+		System.out.println("sph");
 		this.pageHeight = pageHeight;
 	}
 
