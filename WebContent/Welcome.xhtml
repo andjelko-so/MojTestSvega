@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ice="http://www.icesoft.com/icefaces/component">
+
+<h:head>
+   	<link href="./xmlhttp/css/xp/xp.css" rel="stylesheet" type="text/css" />
+		<link href="./xmlhttp/css/royale/royale.css" rel="stylesheet"
+			type="text/css" />
+	<h:outputScript name="jquery-1.4.2.min.js" library="scripts" />
+	<title><ui:insert name="title">Default title</ui:insert></title>
+	<script type="text/javascript">
+    jQuery.noConflict();
+    jQuery(document).ready(function getHeight() {
+    	var panelDivHight =  jQuery(document).height() + "px";
+    	return panelDivHight;
+    })
+
+    jQuery(document).ready(function getWidth() {
+    	var panelDivWidth =  jQuery(document).width() + "px";
+    	return panelDivWidth;
+    })
+</script>
+</h:head>
+<h:body>
+	<ice:form>
+		<ice:commandButton action="#{navigationBean.doNav}" value="Click here to go" />
+		<f:param name="webParagrafPaneldividerHeight" value="1000px"/>
+	</ice:form>
+</h:body>
+</html>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ice="http://www.icesoft.com/icefaces/component">
+    <h:head>
+    	<link href="./xmlhttp/css/xp/xp.css" rel="stylesheet" type="text/css" />
+	<title><ui:insert name="title">Default title</ui:insert></title>
+    </h:head>
+    <h:body>
+    <ice:form>
+        <ice:panelDivider orientation="vertical" dividerPosition="20" style="#{navigationBean.style}">
+		<f:facet name="first">
+			<ice:panelGroup>
+			<ice:outputText value="first panelGroup"></ice:outputText>
+			</ice:panelGroup>
+		</f:facet>
+
+		<f:facet name="second">
+			<ice:panelGroup>
+			<ice:outputText value="second panelGroup"></ice:outputText>
+			</ice:panelGroup>
+		</f:facet>
+	</ice:panelDivider>
+	</ice:form>
+    </h:body>
+</html>
